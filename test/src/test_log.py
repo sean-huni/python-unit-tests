@@ -1,7 +1,9 @@
 import unittest
+
 from main.src.service.writer.log import Printer
 
 
+# https://realpython.com/python-testing/
 class PrinterServiceTest(unittest.TestCase):
     printerService = Printer()
 

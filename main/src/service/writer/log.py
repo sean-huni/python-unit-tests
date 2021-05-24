@@ -1,8 +1,12 @@
-from main.src.service.calcs.calc import Division
 import logging
-logging.basicConfig(format='%(asctime)s - %(levelname)s  - %(name)s - %(message)s', datefmt='%d-%b-%Y %H:%M:%S', level='INFO')
+
+from main.src.service.calcs.calc import Division
+
+logging.basicConfig(format='%(asctime)s - %(levelname)s  - %(name)s - %(message)s', datefmt='%d-%b-%Y %H:%M:%S',
+                    level='INFO')
 
 
+# https://realpython.com/python-logging/
 class Printer:
     res = Division()
     log = logging.getLogger(__name__)

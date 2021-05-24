@@ -1,12 +1,16 @@
 import unittest
+
 from main.src.service.calcs.calc import Division
 
+
+# https://realpython.com/python-testing/
 class CalcServiceTest(unittest.TestCase):
     div = Division
 
     '''
     Calc Service DivideBy - Positive Test
     '''
+
     def test_givenCalcService_whenDivideBy_thenReturnResultSuccess(self):
         a = 5
         b = 5
